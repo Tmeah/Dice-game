@@ -25,7 +25,8 @@ body {
 /* LAYOUT */
 main {
   position: relative;
-  width: 100rem;
+  max-width: 100rem;
+  width: 100%;
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
@@ -168,4 +169,58 @@ main {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .player {
+    padding: 4rem;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .btn--new {
+    top: 40%;
+  }
+  .btn--roll {
+    top: 50%;
+  }
+  .btn--hold {
+    top: 60%;
+  }
+  .dice {
+    top: 10%;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 468px) {
+  .current {
+    padding: 2px;
+  }
+  .current-label {
+    font-size: 12px;
+  }
+  .player {
+    padding: 2rem;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+  .btn--new {
+    top: 30%;
+    font-size: 14px;
+  }
+  .btn--roll {
+    top: 45%;
+  }
+  .btn--hold {
+    top: 60%;
+  }
+  .dice {
+    top: 10%;
+  }
 }
